@@ -3,11 +3,11 @@ schemaVersion = "0.0.1"
 
 
 [package]
-namespace = "AuthorName"
-name = "ModName"
+namespace = "JarlUlsfark"
+name = "Horde_Mode"
 versionNumber = "0.0.1"
 description = "Allows to do some super duper thing."
-websiteUrl = "https://github.com/AuthorName/ModName"
+websiteUrl = "https://github.com/Tal-lev/Horde_Mode"
 containsNsfwContent = false
 
 [package.dependencies]
