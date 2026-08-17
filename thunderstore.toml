@@ -6,7 +6,7 @@ schemaVersion = "0.0.1"
 namespace = "JarlUlsfark"
 name = "Horde_Mode"
 versionNumber = "0.0.1"
-description = "Allows to do some super duper thing."
+description = "Adds A Horde Mode to Dream Dives."
 websiteUrl = "https://github.com/Tal-lev/Horde_Mode"
 containsNsfwContent = false
 
@@ -17,6 +17,8 @@ SGG_Modding-Chalk = "2.1.1"
 SGG_Modding-ReLoad = "1.0.2"
 SGG_Modding-SJSON = "1.0.0"
 SGG_Modding-ModUtil = "4.0.1"
+NikkelM-Zagreus_Journey = "1.2.0"
+Zerp-BossRush = "0.3.2"
 
 # Uncomment the section to add any soft dependecies.
 # Learn more about them here https://sgg-modding.github.io/Hades2ModWiki/docs/creating-mods/first-mod-guide/mod-template#packagerom_soft_deps
