@@ -1,6 +1,6 @@
-# Mod name
+# Horde Mode
 
-Hades II mod allowing to do some super duper thing.
+Adds Horde Mode into Dream Dives
 
 ## Features
 
