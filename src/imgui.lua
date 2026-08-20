@@ -1,9 +1,9 @@
 local previousConfig = {
-    Active = nil
-    ActiveEnemyCapMax = nil
-    MaxTypes = nil
-    TimeLimit = nil
-    AddAtTimeInterval = nil
+    Active = nil,
+    ActiveEnemyCapMax = nil,
+    MaxTypes = nil,
+    TimeLimit = nil,
+    AddAtTimeInterval = nil,
 }
 
 rom.gui.add_imgui(function()
@@ -24,7 +24,7 @@ function DrawMenu()
 
     config.Active = config.Active or "No"
 
-    rom.ImGui.Text("Start at selected Location")
+    rom.ImGui.Text("Activate Horde_Mode instead of BossRush")
     if rom.ImGui.BeginCombo("###Active", config.Active) then
         for _, ActiveName in ipairs(mod.ActiveOrder) do
             if rom.ImGui.Selectable(ActiveName, (ActiveName == config.Active)) then
