@@ -6,20 +6,6 @@ local previousConfig = {
     AddAtTimeInterval = nil,
 }
 
-rom.gui.add_imgui(function()
-    if rom.ImGui.Begin("Horde_Mode") then
-        DrawMenu()
-        rom.ImGui.End()
-    end
-end)
-
-rom.gui.add_to_menu_bar(function()
-    if rom.ImGui.BeginMenu("Horde_Mode") then
-        DrawMenu()
-        rom.ImGui.EndMenu()
-    end
-end)
-
 function DrawMenu()
 
     config.Active = config.Active or "No"
@@ -38,3 +24,5 @@ function DrawMenu()
         rom.ImGui.EndCombo()
     end
 end
+
+rom.mods["zerp-DreamDiveTweaks"].RegisterPluginImGui(DrawMenu, "Horde Mode")
