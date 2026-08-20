@@ -784,6 +784,7 @@ OverwriteTableKeys(RoomData, {
 })
 
 -- Modify PreBoss Rooms to link into survival rooms
+
 table.insert(RoomData.F_PreBoss01.LinkedRooms, "F_Survival05")
 table.insert(RoomData.F_PreBoss01.LinkedRooms, "F_Survival08")
 table.insert(RoomData.F_PreBoss01.LinkedRooms, "F_Survival13")
@@ -872,6 +873,9 @@ table.insert(RoomData.G_Boss02.GameStateRequirements, {PathFalse = {"CurrentRun"
 table.insert(RoomData.H_Boss01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
 table.insert(RoomData.H_Boss02.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
 
+if not RoomData.I_Boss01.GameStateRequirements then
+    RoomData.I_Boss01.GameStateRequirements = {}
+end
 table.insert(RoomData.I_Boss01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
 
 table.insert(RoomData.N_Boss01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
@@ -880,6 +884,9 @@ table.insert(RoomData.N_Boss02.GameStateRequirements, {PathFalse = {"CurrentRun"
 table.insert(RoomData.O_Boss01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
 table.insert(RoomData.O_Boss02.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
 
+if not RoomData.P_Boss01.GameStateRequirements then
+    RoomData.P_Boss01.GameStateRequirements = {}
+end
 table.insert(RoomData.P_Boss01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
 
 table.insert(RoomData.Q_Boss01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})

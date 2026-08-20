@@ -10,7 +10,7 @@ import "Room.lua"
 
 modutil.mod.Path.Wrap("StartNewRun", function (base, ...)
     local currentRun = base(...)
-    print("Horde Mode config; Horde_Mode =", config.Active,)
+    print("Horde Mode config; Horde_Mode =", config.Active)
     if currentRun["zerp-BossRush" .. "BossRush"] == true and config.Active == "Yes" then
         currentRun[_PLUGIN.guid .. "HordeMode"] = true
     end
