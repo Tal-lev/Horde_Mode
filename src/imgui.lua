@@ -1,7 +1,9 @@
 local previousConfig = {
-    Biome = nil,
-    Location = nil,
-    Type  = nil,
+    Active = nil
+    ActiveEnemyCapMax = nil
+    MaxTypes = nil
+    TimeLimit = nil
+    AddAtTimeInterval = nil
 }
 
 rom.gui.add_imgui(function()
