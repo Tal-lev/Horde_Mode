@@ -16,6 +16,7 @@ While the mod has been tested decently well it is recommended to backup your sav
 
 - Destroying Ephyra SoulPylon removes the Survival UI
 - Mourning Fields takes 2 regions
+- Olympus has a short encounter before the survival
 
 ## Issues
 
