@@ -6,20 +6,20 @@ OverwriteTableKeys(EncounterData, {
 		InheritFrom = { "BaseSurvival", },
 		RequiredMinBiomeDepth = 6,
 		--up from 6
-		ActiveEnemyCapBase = 8,
-		ActiveEnemyCapMax = 8,
+		ActiveEnemyCapBase = config.ActiveEnemyCapMax,
+		ActiveEnemyCapMax = config.ActiveEnemyCapMax,
 
 		SpawnIntervalMin = 0.5,
 		SpawnIntervalMax = 0.8,
 		MinWaves = 2,
 		MaxWaves = 3,
 		--up from 2
-		MinTypes = 4,
-		MaxTypes = 4,
+		MinTypes = config.MaxTypes,
+		MaxTypes = config.MaxTypes,
 		TypeCountDepthRamp = 0.0,
 
 		--up from 45
-		TimeLimit = 5,
+		TimeLimit = config.TimeLimit,
 		AddAtTimeInterval = 12,
 		InfiniteSpawns = true,
 
@@ -30,7 +30,7 @@ OverwriteTableKeys(EncounterData, {
 		ManualWaveTemplates =
 		{
 			{
-				AddAtTime = 60,
+				AddAtTime = config.TimeLimit,
 				Spawns = {},
 				RequireCompletedIntro = true,
 			}
@@ -38,7 +38,7 @@ OverwriteTableKeys(EncounterData, {
 
 		WaveTemplate =
 		{
-			AddAtTime = 60,
+			AddAtTime = config.TimeLimit,
 			MinTypes = 1,
 			MaxTypes = 1,
 			Spawns = {},
@@ -125,7 +125,7 @@ if UnderworldRites then
 	OverwriteTableKeys(EncounterData, {
         SurvivalPyre =
         {
-            InheritFrom = { "SurvivalHorde", "GeneratedTartarus" },
+            InheritFrom = { "SurvivalHorde", "GeneratedF" },
             EnemySet = EnemySets.BiomePyre,
         },
 	})
