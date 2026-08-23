@@ -657,7 +657,7 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"P_Combat01"},
         MultipleEncountersData =
 		{
-			{ LegalEncounters = { }, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
 				
 			{ LegalEncounters = { "SurvivalP", } },
 		},
@@ -673,12 +673,8 @@ OverwriteTableKeys(RoomData, {
     P_Survival02 =
     {
         InheritFrom = {"P_MiniBoss02"},
-        MultipleEncountersData =
-		{
-			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
-				
-			{ LegalEncounters = { "SurvivalP", } },
-		},
+        LegalEncounters = { "SurvivalP", },
+
         CanSpawnDreamReward = true,  
         GameStateRequirements =
         {

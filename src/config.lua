@@ -2,8 +2,8 @@ return {
   version = 0;
   enabled = true;
   Active = "No";
-  ActiveEnemyCapMax = 6;
-  MaxTypes = 2;
-  TimeLimit = 45;
+  ActiveEnemyCapMax = 8;
+  MaxTypes = 4;
+  TimeLimit = 60;
   AddAtTimeInterval = 12;
 }
