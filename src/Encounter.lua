@@ -19,7 +19,7 @@ OverwriteTableKeys(EncounterData, {
 		TypeCountDepthRamp = 0.0,
 
 		--up from 45
-		TimeLimit = 60,
+		TimeLimit = 5,
 		AddAtTimeInterval = 12,
 		InfiniteSpawns = true,
 
@@ -85,7 +85,7 @@ OverwriteTableKeys(EncounterData, {
 
     SurvivalP =
 	{
-		InheritFrom = { "SurvivalHorde", "GeneratedP" },
+		InheritFrom = { "SurvivalHorde", "GeneratedQ" },
 		EnemySet = EnemySets.BiomeP,
 	},
 
@@ -97,7 +97,7 @@ OverwriteTableKeys(EncounterData, {
 
     SurvivalHordeTartarus =
 	{
-		InheritFrom = { "SurvivalHorde", "GeneratedTartarus" },
+		InheritFrom = { "SurvivalHorde", "GeneratedG" },
 		EnemySet = EnemySets.EnemiesBiome1,
 	},
 

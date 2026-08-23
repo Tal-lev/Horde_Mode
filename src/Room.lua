@@ -1,3 +1,5 @@
+
+
 OverwriteTableKeys(RoomData, {
     -- Adding Survival Rooms
     -- Check good maps for it
@@ -200,7 +202,8 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"H_MiniBoss01"},
         LegalEncounters = { "SurvivalH", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true,
+        EntranceDirection = "LeftRight",
         GameStateRequirements =
         {
             {
@@ -213,7 +216,8 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"H_MiniBoss02"},
         LegalEncounters = { "SurvivalH", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true, 
+        EntranceDirection = "LeftRight",
         GameStateRequirements =
         {
             {
@@ -357,6 +361,9 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"N_Combat01"},
         LegalEncounters = { "SurvivalN", }, 
         CanSpawnDreamReward = true,  
+        PersistentRoomForDoors = false,
+        CloseDoorsOnUse = false,
+        StartThreadedEvents = {},
         GameStateRequirements =
         {
             {
@@ -370,6 +377,9 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"N_Combat05"},
         LegalEncounters = { "SurvivalN", }, 
         CanSpawnDreamReward = true,  
+        PersistentRoomForDoors = false,
+        CloseDoorsOnUse = false,
+        StartThreadedEvents = {},
         GameStateRequirements =
         {
             {
@@ -382,7 +392,10 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"N_Combat06"},
         LegalEncounters = { "SurvivalN", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true,
+        PersistentRoomForDoors = false,  
+        CloseDoorsOnUse = false,
+        StartThreadedEvents = {},
         GameStateRequirements =
         {
             {
@@ -395,7 +408,10 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"N_Combat07"},
         LegalEncounters = { "SurvivalN", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true, 
+        PersistentRoomForDoors = false, 
+        CloseDoorsOnUse = false,
+        StartThreadedEvents = {},
         GameStateRequirements =
         {
             {
@@ -409,6 +425,9 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"N_Combat08"},
         LegalEncounters = { "SurvivalN", }, 
         CanSpawnDreamReward = true,  
+        PersistentRoomForDoors = false,
+        CloseDoorsOnUse = false,
+        StartThreadedEvents = {}, 
         GameStateRequirements =
         {
             {
@@ -421,7 +440,10 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"N_Combat13"},
         LegalEncounters = { "SurvivalN", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true,
+        PersistentRoomForDoors = false,
+        CloseDoorsOnUse = false,
+        StartThreadedEvents = {},  
         GameStateRequirements =
         {
             {
@@ -434,7 +456,10 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"N_Combat18"},
         LegalEncounters = { "SurvivalN", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true,
+        PersistentRoomForDoors = false, 
+        CloseDoorsOnUse = false,
+        StartThreadedEvents = {},
         GameStateRequirements =
         {
             {
@@ -447,7 +472,10 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"N_Combat19"},
         LegalEncounters = { "SurvivalN", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true,
+        PersistentRoomForDoors = false,
+        CloseDoorsOnUse = false,
+        StartThreadedEvents = {},
         GameStateRequirements =
         {
             {
@@ -460,7 +488,10 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"N_Combat20"},
         LegalEncounters = { "SurvivalN", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true,
+        PersistentRoomForDoors = false,
+        CloseDoorsOnUse = false,
+        StartThreadedEvents = {}, 
         GameStateRequirements =
         {
             {
@@ -473,7 +504,10 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"N_Combat21"},
         LegalEncounters = { "SurvivalN", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true,
+        PersistentRoomForDoors = false,
+        CloseDoorsOnUse = false,
+        StartThreadedEvents = {},
         GameStateRequirements =
         {
             {
@@ -486,7 +520,10 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"N_Combat22"},
         LegalEncounters = { "SurvivalN", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true,
+        PersistentRoomForDoors = false,
+        CloseDoorsOnUse = false,
+        StartThreadedEvents = {},
         GameStateRequirements =
         {
             {
@@ -499,7 +536,10 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"N_Combat23"},
         LegalEncounters = { "SurvivalN", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true,
+        PersistentRoomForDoors = false,
+        CloseDoorsOnUse = false,
+        StartThreadedEvents = {},
         GameStateRequirements =
         {
             {
@@ -507,12 +547,13 @@ OverwriteTableKeys(RoomData, {
             },
         },
     },
-
     O_Survival02 =
     {
         InheritFrom = {"O_Combat02"},
         LegalEncounters = { "SurvivalO", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true, 
+        NoReward = false,
+        MultipleEncountersData = {}, 
         GameStateRequirements =
         {
             {
@@ -525,7 +566,9 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"O_Combat05"},
         LegalEncounters = { "SurvivalO", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true, 
+        NoReward = false, 
+        MultipleEncountersData = {},
         GameStateRequirements =
         {
             {
@@ -539,6 +582,8 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"O_Combat06"},
         LegalEncounters = { "SurvivalO", }, 
         CanSpawnDreamReward = true,  
+        NoReward = false,
+        MultipleEncountersData = {},
         GameStateRequirements =
         {
             {
@@ -551,7 +596,9 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"O_Combat08"},
         LegalEncounters = { "SurvivalO", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true, 
+        NoReward = false,
+        MultipleEncountersData = {}, 
         GameStateRequirements =
         {
             {
@@ -564,7 +611,9 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"O_Combat09"},
         LegalEncounters = { "SurvivalO", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true, 
+        NoReward = false,
+        MultipleEncountersData = {}, 
         GameStateRequirements =
         {
             {
@@ -578,6 +627,8 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"O_Combat12"},
         LegalEncounters = { "SurvivalO", }, 
         CanSpawnDreamReward = true,  
+        NoReward = false,
+        MultipleEncountersData = {},
         GameStateRequirements =
         {
             {
@@ -591,6 +642,8 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"O_Combat14"},
         LegalEncounters = { "SurvivalO", }, 
         CanSpawnDreamReward = true,  
+        NoReward = false,
+        MultipleEncountersData = {},
         GameStateRequirements =
         {
             {
@@ -602,7 +655,12 @@ OverwriteTableKeys(RoomData, {
     P_Survival01 =
     {
         InheritFrom = {"P_Combat01"},
-        LegalEncounters = { "SurvivalP", }, 
+        MultipleEncountersData =
+		{
+			{ LegalEncounters = { }, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+				
+			{ LegalEncounters = { "SurvivalP", } },
+		},
         CanSpawnDreamReward = true,  
         GameStateRequirements =
         {
@@ -615,7 +673,12 @@ OverwriteTableKeys(RoomData, {
     P_Survival02 =
     {
         InheritFrom = {"P_MiniBoss02"},
-        LegalEncounters = { "SurvivalP", }, 
+        MultipleEncountersData =
+		{
+			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+				
+			{ LegalEncounters = { "SurvivalP", } },
+		},
         CanSpawnDreamReward = true,  
         GameStateRequirements =
         {
@@ -628,7 +691,12 @@ OverwriteTableKeys(RoomData, {
     P_Survival04 =
     {
         InheritFrom = {"P_Combat04"},
-        LegalEncounters = { "SurvivalP", }, 
+        MultipleEncountersData =
+		{
+			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+				
+			{ LegalEncounters = { "SurvivalP", } },
+		},
         CanSpawnDreamReward = true,  
         GameStateRequirements =
         {
@@ -641,7 +709,12 @@ OverwriteTableKeys(RoomData, {
     P_Survival05 =
     {
         InheritFrom = {"P_Combat05"},
-        LegalEncounters = { "SurvivalP", }, 
+        MultipleEncountersData =
+		{
+			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+				
+			{ LegalEncounters = { "SurvivalP", } },
+		},
         CanSpawnDreamReward = true,  
         GameStateRequirements =
         {
@@ -654,7 +727,12 @@ OverwriteTableKeys(RoomData, {
     P_Survival06 =
     {
         InheritFrom = {"P_Combat06"},
-        LegalEncounters = { "SurvivalP", }, 
+        MultipleEncountersData =
+		{
+			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+				
+			{ LegalEncounters = { "SurvivalP", } },
+		},
         CanSpawnDreamReward = true,  
         GameStateRequirements =
         {
@@ -667,7 +745,12 @@ OverwriteTableKeys(RoomData, {
     P_Survival09 =
     {
         InheritFrom = {"P_Combat09"},
-        LegalEncounters = { "SurvivalP", }, 
+        MultipleEncountersData =
+		{
+			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+				
+			{ LegalEncounters = { "SurvivalP", } },
+		}, 
         CanSpawnDreamReward = true,  
         GameStateRequirements =
         {
@@ -680,7 +763,12 @@ OverwriteTableKeys(RoomData, {
     P_Survival13 =
     {
         InheritFrom = {"P_Combat13"},
-        LegalEncounters = { "SurvivalP", }, 
+        MultipleEncountersData =
+		{
+			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+				
+			{ LegalEncounters = { "SurvivalP", } },
+		},
         CanSpawnDreamReward = true,  
         GameStateRequirements =
         {
@@ -693,7 +781,12 @@ OverwriteTableKeys(RoomData, {
     P_Survival15 =
     {
         InheritFrom = {"P_Combat15"},
-        LegalEncounters = { "SurvivalP", }, 
+        MultipleEncountersData =
+		{
+			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+				
+			{ LegalEncounters = { "SurvivalP", } },
+		},
         CanSpawnDreamReward = true,  
         GameStateRequirements =
         {
@@ -706,7 +799,12 @@ OverwriteTableKeys(RoomData, {
     P_Survival17 =
     {
         InheritFrom = {"P_Combat17"},
-        LegalEncounters = { "SurvivalP", }, 
+        MultipleEncountersData =
+		{
+			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+				
+			{ LegalEncounters = { "SurvivalP", } },
+		},
         CanSpawnDreamReward = true,  
         GameStateRequirements =
         {
@@ -721,6 +819,7 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"Q_MiniBoss04"},
         LegalEncounters = { "SurvivalQ", }, 
         CanSpawnDreamReward = true,  
+        NoReward = false,
         GameStateRequirements =
         {
             {
@@ -734,6 +833,7 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"Q_Combat10"},
         LegalEncounters = { "SurvivalQ", }, 
         CanSpawnDreamReward = true,  
+        NoReward = false,
         GameStateRequirements =
         {
             {
@@ -747,6 +847,7 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"Q_Combat11"},
         LegalEncounters = { "SurvivalQ", }, 
         CanSpawnDreamReward = true,  
+        NoReward = false,
         GameStateRequirements =
         {
             {
@@ -760,6 +861,7 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"Q_Combat13"},
         LegalEncounters = { "SurvivalQ", }, 
         CanSpawnDreamReward = true,  
+        NoReward = false,
         GameStateRequirements =
         {
             {
@@ -772,7 +874,99 @@ OverwriteTableKeys(RoomData, {
     {
         InheritFrom = {"Q_Combat15"},
         LegalEncounters = { "SurvivalQ", }, 
-        CanSpawnDreamReward = true,  
+        CanSpawnDreamReward = true,
+        NoReward = false,  
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    A_Survival02 =
+    {
+        InheritFrom = {"A_Combat02"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    A_Survival06 =
+    {
+        InheritFrom = {"A_Combat06"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    A_Survival08B =
+    {
+        InheritFrom = {"A_Combat08B"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    A_Survival12 =
+    {
+        InheritFrom = {"A_Combat12"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    A_Survival16 =
+    {
+        InheritFrom = {"A_Combat16"},
+        LegalEncountersDictionary = {}, 
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    A_Survival19 =
+    {
+        InheritFrom = {"A_Combat19"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    A_Survival20 =
+    {
+        InheritFrom = {"A_Combat20"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
         GameStateRequirements =
         {
             {
@@ -782,6 +976,29 @@ OverwriteTableKeys(RoomData, {
     },
 
 })
+
+RoomData.O_Survival02.MultipleEncountersData = nil
+RoomData.O_Survival05.MultipleEncountersData = nil
+RoomData.O_Survival06.MultipleEncountersData = nil
+RoomData.O_Survival08.MultipleEncountersData = nil
+RoomData.O_Survival09.MultipleEncountersData = nil
+RoomData.O_Survival12.MultipleEncountersData = nil
+RoomData.O_Survival14.MultipleEncountersData = nil
+RoomData.O_Survival02.WrappingData = nil
+RoomData.O_Survival05.WrappingData = nil
+RoomData.O_Survival06.WrappingData = nil
+RoomData.O_Survival08.WrappingData = nil
+RoomData.O_Survival09.WrappingData = nil
+RoomData.O_Survival12.WrappingData = nil
+RoomData.O_Survival14.WrappingData = nil
+
+RoomData.A_Survival02.LegalEncountersDictionary.SurvivalHordeTartarus = true
+RoomData.A_Survival06.LegalEncountersDictionary.SurvivalHordeTartarus = true
+RoomData.A_Survival08B.LegalEncountersDictionary.SurvivalHordeTartarus = true
+RoomData.A_Survival12.LegalEncountersDictionary.SurvivalHordeTartarus = true
+RoomData.A_Survival16.LegalEncountersDictionary.SurvivalHordeTartarus = true
+RoomData.A_Survival19.LegalEncountersDictionary.SurvivalHordeTartarus = true
+RoomData.A_Survival20.LegalEncountersDictionary.SurvivalHordeTartarus = true
 
 -- Modify PreBoss Rooms to link into survival rooms
 
@@ -863,6 +1080,14 @@ table.insert(RoomData.Q_PreBoss01.LinkedRooms, "Q_Survival11")
 table.insert(RoomData.Q_PreBoss01.LinkedRooms, "Q_Survival13")
 table.insert(RoomData.Q_PreBoss01.LinkedRooms, "Q_Survival15")
 
+table.insert(RoomData.A_PreBoss01.LinkedRooms, "A_Survival02")
+table.insert(RoomData.A_PreBoss01.LinkedRooms, "A_Survival06")
+table.insert(RoomData.A_PreBoss01.LinkedRooms, "A_Survival08B")
+table.insert(RoomData.A_PreBoss01.LinkedRooms, "A_Survival12")
+table.insert(RoomData.A_PreBoss01.LinkedRooms, "A_Survival16")
+table.insert(RoomData.A_PreBoss01.LinkedRooms, "A_Survival19")
+table.insert(RoomData.A_PreBoss01.LinkedRooms, "A_Survival20")
+
 -- Add requierment to boss rooms so they only appear in non horde mode
 table.insert(RoomData.F_Boss01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
 table.insert(RoomData.F_Boss02.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
@@ -872,6 +1097,77 @@ table.insert(RoomData.G_Boss02.GameStateRequirements, {PathFalse = {"CurrentRun"
 
 table.insert(RoomData.H_Boss01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
 table.insert(RoomData.H_Boss02.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+
+if not RoomData.H_Combat01.GameStateRequirements then
+    RoomData.H_Combat01.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_Combat02.GameStateRequirements then
+    RoomData.H_Combat02.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat02.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_Combat03.GameStateRequirements then
+    RoomData.H_Combat03.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat03.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_Combat04.GameStateRequirements then
+    RoomData.H_Combat04.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat04.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_Combat05.GameStateRequirements then
+    RoomData.H_Combat05.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat05.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_Combat06.GameStateRequirements then
+    RoomData.H_Combat06.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat06.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_Combat07.GameStateRequirements then
+    RoomData.H_Combat07.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat07.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_Combat08.GameStateRequirements then
+    RoomData.H_Combat08.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat08.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_Combat09.GameStateRequirements then
+    RoomData.H_Combat09.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat09.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_Combat10.GameStateRequirements then
+    RoomData.H_Combat10.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat10.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_Combat11.GameStateRequirements then
+    RoomData.H_Combat11.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat11.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_Combat12.GameStateRequirements then
+    RoomData.H_Combat12.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat12.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_Combat13.GameStateRequirements then
+    RoomData.H_Combat13.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat13.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_Combat14.GameStateRequirements then
+    RoomData.H_Combat14.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat14.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_Combat15.GameStateRequirements then
+    RoomData.H_Combat15.GameStateRequirements = {}
+end
+table.insert(RoomData.H_Combat15.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_MiniBoss01.GameStateRequirements then
+    RoomData.H_MiniBoss01.GameStateRequirements = {}
+end
+table.insert(RoomData.H_MiniBoss01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+if not RoomData.H_MiniBoss02.GameStateRequirements then
+    RoomData.H_MiniBoss02.GameStateRequirements = {}
+end
+table.insert(RoomData.H_MiniBoss02.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
+
+
 
 if not RoomData.I_Boss01.GameStateRequirements then
     RoomData.I_Boss01.GameStateRequirements = {}
@@ -971,3 +1267,51 @@ table.insert(RoomSets.Q, "Q_Survival10")
 table.insert(RoomSets.Q, "Q_Survival11")
 table.insert(RoomSets.Q, "Q_Survival13")
 table.insert(RoomSets.Q, "Q_Survival15")
+
+table.insert(RoomSets.Tartarus, "A_Survival02")
+table.insert(RoomSets.Tartarus, "A_Survival06")
+table.insert(RoomSets.Tartarus, "A_Survival08B")
+table.insert(RoomSets.Tartarus, "A_Survival12")
+table.insert(RoomSets.Tartarus, "A_Survival16")
+table.insert(RoomSets.Tartarus, "A_Survival19")
+table.insert(RoomSets.Tartarus, "A_Survival20")
+
+print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11Start")
+print("RoomData.A_Combat02.LegalEncountersDictionary")
+for key,value in pairs(RoomData.A_Combat02.LegalEncountersDictionary) do
+    print(key)
+    print(value)
+end
+
+print("RoomData.A_Survival02.LegalEncountersDictionary")
+for key,value in pairs(RoomData.A_Survival02.LegalEncountersDictionary) do
+    print(key)
+    print(value)
+end
+
+modutil.mod.Path.Wrap("StartRoom", function(base, currentRun, currentRoom)
+	
+    print(IsEncounterEligible(currentRun,currentRoom,"SurvivalHordeTartarus",{}))
+    print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11")
+    print("RoomData.A_Combat02.LegalEncountersDictionary")
+    for key,value in pairs(RoomData.A_Combat02.LegalEncountersDictionary) do
+        print(key)
+        print(value)
+    end
+
+    print("RoomData.A_Survival02.LegalEncountersDictionary")
+    for key,value in pairs(RoomData.A_Survival02.LegalEncountersDictionary) do
+        print(key)
+        print(value)
+    end
+    print("EncounterData.SurvivalHordeTartarus")
+    for key,value in pairs(EncounterData.SurvivalHordeTartarus) do
+        print(key)
+        print(value)
+    end
+    for key,value in pairs(RoomData.A_Survival02) do
+        print(key)
+        print(value)
+    end
+	return base(currentRun, currentRoom)
+end)

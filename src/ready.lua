@@ -16,3 +16,26 @@ modutil.mod.Path.Wrap("StartNewRun", function (base, ...)
     end
     return currentRun
 end)
+
+
+modutil.once_loaded.game(function()
+    SetupRunData()
+
+    RoomData.A_Survival02.LegalEncountersDictionary = {}
+    RoomData.A_Survival06.LegalEncountersDictionary = {}
+    RoomData.A_Survival08B.LegalEncountersDictionary = {}
+    RoomData.A_Survival12.LegalEncountersDictionary = {}
+    RoomData.A_Survival16.LegalEncountersDictionary = {}
+    RoomData.A_Survival19.LegalEncountersDictionary = {}
+    RoomData.A_Survival20.LegalEncountersDictionary = {}
+
+    RoomData.A_Survival02.LegalEncountersDictionary.SurvivalHordeTartarus = true
+    RoomData.A_Survival06.LegalEncountersDictionary.SurvivalHordeTartarus = true
+    RoomData.A_Survival08B.LegalEncountersDictionary.SurvivalHordeTartarus = true
+    RoomData.A_Survival12.LegalEncountersDictionary.SurvivalHordeTartarus = true
+    RoomData.A_Survival16.LegalEncountersDictionary.SurvivalHordeTartarus = true
+    RoomData.A_Survival19.LegalEncountersDictionary.SurvivalHordeTartarus = true
+    RoomData.A_Survival20.LegalEncountersDictionary.SurvivalHordeTartarus = true
+end)
+
+
