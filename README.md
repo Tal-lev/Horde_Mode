@@ -14,6 +14,8 @@ While the mod has been tested decently well it is recommended to backup your sav
 
 ## Known Issues
 
+- Avoid Rifts of Thessaly!! Horde mode not implemented there!
+  - It will have a normal encounter that repeats, 1 per biome until the run ends. 
 - Destroying Ephyra SoulPylon removes the Survival UI
 - Mourning Fields takes 2 regions
 - Olympus has a short encounter before the survival
