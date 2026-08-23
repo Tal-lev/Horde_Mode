@@ -975,6 +975,190 @@ OverwriteTableKeys(RoomData, {
         },
     },
 
+    X_Survival02 =
+    {
+        InheritFrom = {"X_Combat02"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    X_Survival04 =
+    {
+        InheritFrom = {"X_Combat04"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    X_Survival21 =
+    {
+        InheritFrom = {"X_Combat21"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    X_Survival22 =
+    {
+        InheritFrom = {"X_Combat22"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    Y_Survival01 =
+    {
+        InheritFrom = {"Y_Combat01"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    Y_Survival02 =
+    {
+        InheritFrom = {"Y_Combat02"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    Y_Survival03 =
+    {
+        InheritFrom = {"Y_Combat03"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    Y_Survival04 =
+    {
+        InheritFrom = {"Y_Combat04"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    Y_Survival05 =
+    {
+        InheritFrom = {"Y_Combat05"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    Y_Survival06 =
+    {
+        InheritFrom = {"Y_Combat06"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    D_Survival01 =
+    {
+        InheritFrom = {"D_Combat01"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    D_Survival02 =
+    {
+        InheritFrom = {"D_Combat02"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    D_Survival04 =
+    {
+        InheritFrom = {"D_Combat04"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+    D_Survival06 =
+    {
+        InheritFrom = {"D_Combat06"},
+        LegalEncountersDictionary = {},
+        CanSpawnDreamReward = true, 
+        GameStateRequirements =
+        {
+            {
+                PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+            },
+        },
+    },
+
+
+
 })
 
 RoomData.O_Survival02.MultipleEncountersData = nil
@@ -991,14 +1175,6 @@ RoomData.O_Survival08.WrappingData = nil
 RoomData.O_Survival09.WrappingData = nil
 RoomData.O_Survival12.WrappingData = nil
 RoomData.O_Survival14.WrappingData = nil
-
-RoomData.A_Survival02.LegalEncountersDictionary.SurvivalHordeTartarus = true
-RoomData.A_Survival06.LegalEncountersDictionary.SurvivalHordeTartarus = true
-RoomData.A_Survival08B.LegalEncountersDictionary.SurvivalHordeTartarus = true
-RoomData.A_Survival12.LegalEncountersDictionary.SurvivalHordeTartarus = true
-RoomData.A_Survival16.LegalEncountersDictionary.SurvivalHordeTartarus = true
-RoomData.A_Survival19.LegalEncountersDictionary.SurvivalHordeTartarus = true
-RoomData.A_Survival20.LegalEncountersDictionary.SurvivalHordeTartarus = true
 
 -- Modify PreBoss Rooms to link into survival rooms
 
@@ -1087,6 +1263,23 @@ table.insert(RoomData.A_PreBoss01.LinkedRooms, "A_Survival12")
 table.insert(RoomData.A_PreBoss01.LinkedRooms, "A_Survival16")
 table.insert(RoomData.A_PreBoss01.LinkedRooms, "A_Survival19")
 table.insert(RoomData.A_PreBoss01.LinkedRooms, "A_Survival20")
+
+table.insert(RoomData.X_PreBoss01.LinkedRooms, "X_Survival02")
+table.insert(RoomData.X_PreBoss01.LinkedRooms, "X_Survival04")
+table.insert(RoomData.X_PreBoss01.LinkedRooms, "X_Survival21")
+table.insert(RoomData.X_PreBoss01.LinkedRooms, "X_Survival22")
+
+RoomData.Y_PreBoss01.LinkedRoom = nil
+if not RoomData.Y_PreBoss01.LinkedRooms then
+    RoomData.Y_PreBoss01.LinkedRooms = {}
+end
+table.insert(RoomData.Y_PreBoss01.LinkedRooms, "Y_Boss01")
+table.insert(RoomData.Y_PreBoss01.LinkedRooms, "Y_Survival01")
+table.insert(RoomData.Y_PreBoss01.LinkedRooms, "Y_Survival02")
+table.insert(RoomData.Y_PreBoss01.LinkedRooms, "Y_Survival03")
+table.insert(RoomData.Y_PreBoss01.LinkedRooms, "Y_Survival04")
+table.insert(RoomData.Y_PreBoss01.LinkedRooms, "Y_Survival05")
+table.insert(RoomData.Y_PreBoss01.LinkedRooms, "Y_Survival06")
 
 -- Add requierment to boss rooms so they only appear in non horde mode
 table.insert(RoomData.F_Boss01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
@@ -1197,8 +1390,6 @@ table.insert(RoomData.X_Boss02.GameStateRequirements, {PathFalse = {"CurrentRun"
 
 table.insert(RoomData.Y_Boss01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
 
-table.insert(RoomData.D_Boss01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-
 --Adding the rooms to the room sets 
 table.insert(RoomSets.F, "F_Survival05")
 table.insert(RoomSets.F, "F_Survival08")
@@ -1276,42 +1467,128 @@ table.insert(RoomSets.Tartarus, "A_Survival16")
 table.insert(RoomSets.Tartarus, "A_Survival19")
 table.insert(RoomSets.Tartarus, "A_Survival20")
 
-print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11Start")
-print("RoomData.A_Combat02.LegalEncountersDictionary")
-for key,value in pairs(RoomData.A_Combat02.LegalEncountersDictionary) do
-    print(key)
-    print(value)
-end
+table.insert(RoomSets.Asphodel, "X_Survival02")
+table.insert(RoomSets.Asphodel, "X_Survival04")
+table.insert(RoomSets.Asphodel, "X_Survival21")
+table.insert(RoomSets.Asphodel, "X_Survival22")
 
-print("RoomData.A_Survival02.LegalEncountersDictionary")
-for key,value in pairs(RoomData.A_Survival02.LegalEncountersDictionary) do
-    print(key)
-    print(value)
-end
+table.insert(RoomSets.Elysium, "Y_Survival01")
+table.insert(RoomSets.Elysium, "Y_Survival02")
+table.insert(RoomSets.Elysium, "Y_Survival03")
+table.insert(RoomSets.Elysium, "Y_Survival04")
+table.insert(RoomSets.Elysium, "Y_Survival05")
+table.insert(RoomSets.Elysium, "Y_Survival06")
+
+table.insert(RoomSets.Styx, "D_Survival01")
+table.insert(RoomSets.Styx, "D_Survival02")
+table.insert(RoomSets.Styx, "D_Survival04")
+table.insert(RoomSets.Styx, "D_Survival06")
+
 
 modutil.mod.Path.Wrap("StartRoom", function(base, currentRun, currentRoom)
-	
-    print(IsEncounterEligible(currentRun,currentRoom,"SurvivalHordeTartarus",{}))
-    print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11")
-    print("RoomData.A_Combat02.LegalEncountersDictionary")
-    for key,value in pairs(RoomData.A_Combat02.LegalEncountersDictionary) do
-        print(key)
-        print(value)
+	print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+    print("ObstacleData.TravelDoor01.ForceRoomName")
+    print(ObstacleData.TravelDoor01.ForceRoomName)
+    if CurrentRun['JarlUlsfark-Horde_ModeHordeMode'] then
+        local Changed = 0
+        if not RoomData.A_Survival02.LegalEncountersDictionary.SurvivalHordeTartarus then
+            RoomData.A_Survival02.LegalEncountersDictionary = {}
+            RoomData.A_Survival06.LegalEncountersDictionary = {}
+            RoomData.A_Survival08B.LegalEncountersDictionary = {}
+            RoomData.A_Survival12.LegalEncountersDictionary = {}
+            RoomData.A_Survival16.LegalEncountersDictionary = {}
+            RoomData.A_Survival19.LegalEncountersDictionary = {}
+            RoomData.A_Survival20.LegalEncountersDictionary = {}
+
+            RoomData.A_Survival02.LegalEncountersDictionary.SurvivalHordeTartarus = true
+            RoomData.A_Survival06.LegalEncountersDictionary.SurvivalHordeTartarus = true
+            RoomData.A_Survival08B.LegalEncountersDictionary.SurvivalHordeTartarus = true
+            RoomData.A_Survival12.LegalEncountersDictionary.SurvivalHordeTartarus = true
+            RoomData.A_Survival16.LegalEncountersDictionary.SurvivalHordeTartarus = true
+            RoomData.A_Survival19.LegalEncountersDictionary.SurvivalHordeTartarus = true
+            RoomData.A_Survival20.LegalEncountersDictionary.SurvivalHordeTartarus = true
+
+            RoomData.X_Survival02.LegalEncountersDictionary = {}
+            RoomData.X_Survival04.LegalEncountersDictionary = {}
+            RoomData.X_Survival21.LegalEncountersDictionary = {}
+            RoomData.X_Survival22.LegalEncountersDictionary = {}
+
+            RoomData.X_Survival02.LegalEncountersDictionary.SurvivalHordeAsphodel = true
+            RoomData.X_Survival04.LegalEncountersDictionary.SurvivalHordeAsphodel = true
+            RoomData.X_Survival21.LegalEncountersDictionary.SurvivalHordeAsphodel = true
+            RoomData.X_Survival22.LegalEncountersDictionary.SurvivalHordeAsphodel = true
+
+            RoomData.Y_Survival01.LegalEncountersDictionary = {}
+            RoomData.Y_Survival02.LegalEncountersDictionary = {}
+            RoomData.Y_Survival03.LegalEncountersDictionary = {}
+            RoomData.Y_Survival04.LegalEncountersDictionary = {}
+            RoomData.Y_Survival05.LegalEncountersDictionary = {}
+            RoomData.Y_Survival06.LegalEncountersDictionary = {}
+
+            RoomData.Y_Survival01.LegalEncountersDictionary.SurvivalHordeElysium = true
+            RoomData.Y_Survival02.LegalEncountersDictionary.SurvivalHordeElysium = true
+            RoomData.Y_Survival03.LegalEncountersDictionary.SurvivalHordeElysium = true
+            RoomData.Y_Survival04.LegalEncountersDictionary.SurvivalHordeElysium = true
+            RoomData.Y_Survival05.LegalEncountersDictionary.SurvivalHordeElysium = true
+            RoomData.Y_Survival06.LegalEncountersDictionary.SurvivalHordeElysium = true
+
+            RoomData.D_Survival01.LegalEncountersDictionary = {}
+            RoomData.D_Survival02.LegalEncountersDictionary = {}
+            RoomData.D_Survival04.LegalEncountersDictionary = {}
+            RoomData.D_Survival06.LegalEncountersDictionary = {}
+
+            RoomData.D_Survival01.LegalEncountersDictionary.SurvivalStyx = true
+            RoomData.D_Survival02.LegalEncountersDictionary.SurvivalStyx = true
+            RoomData.D_Survival04.LegalEncountersDictionary.SurvivalStyx = true
+            RoomData.D_Survival06.LegalEncountersDictionary.SurvivalStyx = true
+
+            Changed = 1
+        end 
+        if not RoomData.A_Survival02.LegalEncounters or RoomData.A_Survival02.LegalEncounters[1] ~= "SurvivalHordeTartarus" then
+            RoomData.A_Survival02.LegalEncounters = {"SurvivalHordeTartarus",}
+            RoomData.A_Survival06.LegalEncounters = {"SurvivalHordeTartarus",}
+            RoomData.A_Survival08B.LegalEncounters = {"SurvivalHordeTartarus",}
+            RoomData.A_Survival12.LegalEncounters = {"SurvivalHordeTartarus",}
+            RoomData.A_Survival16.LegalEncounters = {"SurvivalHordeTartarus",}
+            RoomData.A_Survival19.LegalEncounters = {"SurvivalHordeTartarus",}
+            RoomData.A_Survival20.LegalEncounters = {"SurvivalHordeTartarus",}
+
+            RoomData.X_Survival02.LegalEncounters = {"SurvivalHordeAsphodel",}
+            RoomData.X_Survival04.LegalEncounters = {"SurvivalHordeAsphodel",}
+            RoomData.X_Survival21.LegalEncounters = {"SurvivalHordeAsphodel",}
+            RoomData.X_Survival22.LegalEncounters = {"SurvivalHordeAsphodel",}
+
+            RoomData.Y_Survival01.LegalEncounters = {"SurvivalHordeElysium",}
+            RoomData.Y_Survival02.LegalEncounters = {"SurvivalHordeElysium",}
+            RoomData.Y_Survival03.LegalEncounters = {"SurvivalHordeElysium",}
+            RoomData.Y_Survival04.LegalEncounters = {"SurvivalHordeElysium",}
+            RoomData.Y_Survival05.LegalEncounters = {"SurvivalHordeElysium",}
+            RoomData.Y_Survival06.LegalEncounters = {"SurvivalHordeElysium",}
+
+            RoomData.D_Survival01.LegalEncounters = {"SurvivalStyx",}
+            RoomData.D_Survival02.LegalEncounters = {"SurvivalStyx",}
+            RoomData.D_Survival04.LegalEncounters = {"SurvivalStyx",}
+            RoomData.D_Survival06.LegalEncounters = {"SurvivalStyx",}
+
+            Changed = 1
+        end
+        if ObstacleData and ObstacleData.TravelDoor01 and ObstacleData.TravelDoor01.ForceRoomName and ObstacleData.TravelDoor01.ForceRoomName then
+            if math.random() < 0.25 then
+                ObstacleData.TravelDoor01.ForceRoomName = "D_Survival01"
+            elseif math.random() < 0.5 then
+                ObstacleData.TravelDoor01.ForceRoomName = "D_Survival02"
+            elseif math.random() < 0.75 then
+                ObstacleData.TravelDoor01.ForceRoomName = "D_Survival04"
+            else
+                ObstacleData.TravelDoor01.ForceRoomName = "D_Survival06"
+            end
+        end
+        if Changed == 1 then
+            SetupRunData()
+        end
+    elseif ObstacleData and ObstacleData.TravelDoor01 and ObstacleData.TravelDoor01.ForceRoomName and ObstacleData.TravelDoor01.ForceRoomName ~= "D_Boss01" then
+        ObstacleData.TravelDoor01.ForceRoomName = "D_Boss01"
     end
 
-    print("RoomData.A_Survival02.LegalEncountersDictionary")
-    for key,value in pairs(RoomData.A_Survival02.LegalEncountersDictionary) do
-        print(key)
-        print(value)
-    end
-    print("EncounterData.SurvivalHordeTartarus")
-    for key,value in pairs(EncounterData.SurvivalHordeTartarus) do
-        print(key)
-        print(value)
-    end
-    for key,value in pairs(RoomData.A_Survival02) do
-        print(key)
-        print(value)
-    end
 	return base(currentRun, currentRoom)
 end)

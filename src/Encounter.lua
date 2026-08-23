@@ -45,6 +45,7 @@ OverwriteTableKeys(EncounterData, {
 			RequireCompletedIntro = true,
 		},
 		SpawnThreadName = "SurvivalSpawnThread",
+		Force = true,
 	},
 	
 	SurvivalF =
@@ -97,17 +98,17 @@ OverwriteTableKeys(EncounterData, {
 
     SurvivalHordeTartarus =
 	{
-		InheritFrom = { "SurvivalHorde", "GeneratedG" },
+		InheritFrom = { "SurvivalHorde", "GeneratedTartarus" },
 		EnemySet = EnemySets.EnemiesBiome1,
 	},
 
 	SurvivalHordeAsphodel =
 	{
 		InheritFrom = { "SurvivalHorde", "GeneratedAsphodel" },
-		EnemySet = EnemySets.EnemiesBiome1,
+		EnemySet = EnemySets.EnemiesBiome2,
 	},
 
-	SurvivalHordeElysiym =
+	SurvivalHordeElysium =
 	{
 		InheritFrom = { "SurvivalHorde", "GeneratedElysium" },
 		EnemySet = EnemySets.EnemiesBiome3,
