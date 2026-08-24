@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Fix: Mourning fields shop leads to survival room instead of into room
+- Fix: Victory screen appears when winning the run
+
 ## [1.0.0] - 2026-08-24
 
 - Implement Rifts of Thessaly Horde Mode
