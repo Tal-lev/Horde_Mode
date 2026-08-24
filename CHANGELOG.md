@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-08-24
+
 - Fix: Mourning fields shop leads to survival room instead of intro room (thanks to @zerp on discord)
 - Fix: Victory screen appears when winning the run
 - Fix: Heracles encounters will no longer appear instead of survival
@@ -20,5 +22,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - First version of the mod!
 
-[unreleased]: https://github.com/Tal-lev/Horde_Mode/compare/1.0.0...HEAD
+[unreleased]: https://github.com/Tal-lev/Horde_Mode/compare/1.0.1...HEAD
+[1.0.1]: https://github.com/Tal-lev/Horde_Mode/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/Tal-lev/Horde_Mode/compare/6031e38c1b2d5a97c55312ee8cd8b612f46ff1e8...1.0.0
