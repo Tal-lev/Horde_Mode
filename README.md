@@ -36,3 +36,7 @@ While the mod has been tested decently well it is recommended to backup your sav
 ## Issues
 
 Report any issues on the mod [github](https://github.com/Tal-lev/Horde_Mode/issues) or [Hades Modding discord](https://discord.gg/KuMbyrN)
+
+## Credits
+
+- @zerp on discord for fixing the mourning fields invalid room bug
