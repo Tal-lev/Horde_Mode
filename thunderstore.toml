@@ -5,7 +5,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "JarlUlsfark"
 name = "Horde_Mode"
-versionNumber = "1.0.0"
+versionNumber = "1.0.1"
 description = "Adds Horde Mode to Dream Dives. Survive the Endless Horde until time runs out."
 websiteUrl = "https://github.com/Tal-lev/Horde_Mode"
 containsNsfwContent = false
