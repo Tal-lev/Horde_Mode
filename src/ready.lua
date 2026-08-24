@@ -4,7 +4,6 @@
 
 import "config.lua"
 import "data.lua"
-import "imgui.lua"
 import "Encounter.lua"
 import "Room.lua"
 
@@ -14,6 +13,30 @@ modutil.mod.Path.Wrap("StartNewRun", function (base, ...)
     if currentRun["zerp-BossRush" .. "BossRush"] == true and config.Active == "Yes" then
         currentRun[_PLUGIN.guid .. "HordeMode"] = true
         if EncounterData and EncounterData.SurvivalHorde and (config.TimeLimit ~= EncounterData.SurvivalHorde.TimeLimit or config.ActiveEnemyCapMax ~=  EncounterData.SurvivalHorde.ActiveEnemyCapMax or config.MaxTypes ~= EncounterData.SurvivalHorde.MaxTypes) then
+            OverwriteTableKeys(EncounterData.SurvivalHorde, {
+                ActiveEnemyCapBase = config.ActiveEnemyCapMax,
+		        ActiveEnemyCapMax = config.ActiveEnemyCapMax,
+                MinTypes = config.MaxTypes,
+		        MaxTypes = config.MaxTypes,
+                TimeLimit = config.TimeLimit,
+                ManualWaveTemplates =
+                {
+                    {
+                        AddAtTime = config.TimeLimit,
+                        Spawns = {},
+                        RequireCompletedIntro = true,
+                    }
+                },
+
+                WaveTemplate =
+                {
+                    AddAtTime = config.TimeLimit,
+                    MinTypes = 1,
+                    MaxTypes = 1,
+                    Spawns = {},
+                    RequireCompletedIntro = true,
+                },
+            })
             SetupRunData()
         end
     end

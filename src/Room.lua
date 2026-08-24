@@ -557,7 +557,7 @@ OverwriteTableKeys(RoomData, {
         NoReward = false,
         MultipleEncountersData =
         {
-			{ LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+			{ LegalEncounters = {"GeneratedO_Intro01",}, }, -- Pre-Spawned Enemies
 			{ LegalEncounters = { "SurvivalO", }, }, -- First Encounter
 		},
         GameStateRequirements =
@@ -576,7 +576,7 @@ OverwriteTableKeys(RoomData, {
         NoReward = false,
         MultipleEncountersData =
         {
-			{ LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+			{ LegalEncounters = {"GeneratedO_Intro01",}, }, -- Pre-Spawned Enemies
 			{ LegalEncounters = { "SurvivalO", }, }, -- First Encounter
 		},
         GameStateRequirements =
@@ -595,7 +595,7 @@ OverwriteTableKeys(RoomData, {
         NoReward = false,
         MultipleEncountersData =
         {
-			{ LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+			{ LegalEncounters = {"GeneratedO_Intro01",}, }, -- Pre-Spawned Enemies
 			{ LegalEncounters = { "SurvivalO", }, }, -- First Encounter
 		},
         GameStateRequirements =
@@ -614,7 +614,7 @@ OverwriteTableKeys(RoomData, {
         NoReward = false,
         MultipleEncountersData =
         {
-			{ LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+			{ LegalEncounters = {"GeneratedO_Intro01",}, }, -- Pre-Spawned Enemies
 			{ LegalEncounters = { "SurvivalO", }, }, -- First Encounter
 		},
         GameStateRequirements =
@@ -633,7 +633,7 @@ OverwriteTableKeys(RoomData, {
         NoReward = false,
         MultipleEncountersData =
         {
-			{ LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+			{ LegalEncounters = {"GeneratedO_Intro01",}, }, -- Pre-Spawned Enemies
 			{ LegalEncounters = { "SurvivalO", }, }, -- First Encounter
 		},
         GameStateRequirements =
@@ -652,7 +652,7 @@ OverwriteTableKeys(RoomData, {
         NoReward = false,
         MultipleEncountersData =
         {
-			{ LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+			{ LegalEncounters = {"GeneratedO_Intro01",}, }, -- Pre-Spawned Enemies
 			{ LegalEncounters = { "SurvivalO", }, }, -- First Encounter
 		},
         GameStateRequirements =
@@ -671,7 +671,7 @@ OverwriteTableKeys(RoomData, {
         NoReward = false,
         MultipleEncountersData =
         {
-			{ LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+			{ LegalEncounters = {"GeneratedO_Intro01",}, }, -- Pre-Spawned Enemies
 			{ LegalEncounters = { "SurvivalO", }, }, -- First Encounter
 		},
         GameStateRequirements =
@@ -687,7 +687,7 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"P_Combat01"},
         MultipleEncountersData =
 		{
-			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+			{ LegalEncounters = {"GeneratedP_PreCombat","GeneratedP_PreCombatChronosForces",}, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
 				
 			{ LegalEncounters = { "SurvivalP", } },
 		},
@@ -719,7 +719,7 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"P_Combat04"},
         MultipleEncountersData =
 		{
-			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+			{ LegalEncounters = {"GeneratedP_PreCombat","GeneratedP_PreCombatChronosForces",}, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
 				
 			{ LegalEncounters = { "SurvivalP", } },
 		},
@@ -737,7 +737,7 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"P_Combat05"},
         MultipleEncountersData =
 		{
-			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+			{ LegalEncounters = {"GeneratedP_PreCombat","GeneratedP_PreCombatChronosForces",}, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
 				
 			{ LegalEncounters = { "SurvivalP", } },
 		},
@@ -755,7 +755,7 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"P_Combat06"},
         MultipleEncountersData =
 		{
-			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+			{ LegalEncounters = {"GeneratedP_PreCombat","GeneratedP_PreCombatChronosForces",}, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
 				
 			{ LegalEncounters = { "SurvivalP", } },
 		},
@@ -773,7 +773,7 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"P_Combat09"},
         MultipleEncountersData =
 		{
-			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+			{ LegalEncounters = {"GeneratedP_PreCombat","GeneratedP_PreCombatChronosForces",}, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
 				
 			{ LegalEncounters = { "SurvivalP", } },
 		}, 
@@ -791,7 +791,7 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"P_Combat13"},
         MultipleEncountersData =
 		{
-			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+			{ LegalEncounters = {"GeneratedP_PreCombat","GeneratedP_PreCombatChronosForces",}, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
 				
 			{ LegalEncounters = { "SurvivalP", } },
 		},
@@ -809,7 +809,7 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"P_Combat15"},
         MultipleEncountersData =
 		{
-			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+			{ LegalEncounters = {"GeneratedP_PreCombat","GeneratedP_PreCombatChronosForces",}, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
 				
 			{ LegalEncounters = { "SurvivalP", } },
 		},
@@ -827,7 +827,7 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"P_Combat17"},
         MultipleEncountersData =
 		{
-			{ LegalEncounters = EncounterSets.PEncountersIntros, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
+			{ LegalEncounters = {"GeneratedP_PreCombat","GeneratedP_PreCombatChronosForces",}, GameStateRequirements = { ChanceToPlay = 1.0 }, ContinueIfInelligible = true, },
 				
 			{ LegalEncounters = { "SurvivalP", } },
 		},
@@ -1187,21 +1187,6 @@ OverwriteTableKeys(RoomData, {
 
 })
 
-RoomData.O_Survival02.MultipleEncountersData = nil
-RoomData.O_Survival05.MultipleEncountersData = nil
-RoomData.O_Survival06.MultipleEncountersData = nil
-RoomData.O_Survival08.MultipleEncountersData = nil
-RoomData.O_Survival09.MultipleEncountersData = nil
-RoomData.O_Survival12.MultipleEncountersData = nil
-RoomData.O_Survival14.MultipleEncountersData = nil
-RoomData.O_Survival02.WrappingData = nil
-RoomData.O_Survival05.WrappingData = nil
-RoomData.O_Survival06.WrappingData = nil
-RoomData.O_Survival08.WrappingData = nil
-RoomData.O_Survival09.WrappingData = nil
-RoomData.O_Survival12.WrappingData = nil
-RoomData.O_Survival14.WrappingData = nil
-
 -- Modify PreBoss Rooms to link into survival rooms
 
 table.insert(RoomData.F_PreBoss01.LinkedRooms, "F_Survival05")
@@ -1462,7 +1447,7 @@ modutil.mod.Path.Wrap("StartRoom", function(base, currentRun, currentRoom)
                 NoReward = false,
                 MultipleEncountersData =
                 {
-                    { LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+                    { LegalEncounters = {"GeneratedO_Intro01",}, }, -- Pre-Spawned Enemies
                     { LegalEncounters = { "SurvivalO", }, }, -- First Encounter
                 },
                 GameStateRequirements =
@@ -1481,7 +1466,7 @@ modutil.mod.Path.Wrap("StartRoom", function(base, currentRun, currentRoom)
                 NoReward = false,
                 MultipleEncountersData =
                 {
-                    { LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+                    { LegalEncounters = {"GeneratedO_Intro01",}, }, -- Pre-Spawned Enemies
                     { LegalEncounters = { "SurvivalO", }, }, -- First Encounter
                 },
                 GameStateRequirements =
@@ -1500,7 +1485,7 @@ modutil.mod.Path.Wrap("StartRoom", function(base, currentRun, currentRoom)
                 NoReward = false,
                 MultipleEncountersData =
                 {
-                    { LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+                    { LegalEncounters = {"GeneratedO_Intro01",}, }, -- Pre-Spawned Enemies
                     { LegalEncounters = { "SurvivalO", }, }, -- First Encounter
                 },
                 GameStateRequirements =
@@ -1519,7 +1504,7 @@ modutil.mod.Path.Wrap("StartRoom", function(base, currentRun, currentRoom)
                 NoReward = false,
                 MultipleEncountersData =
                 {
-                    { LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+                    { LegalEncounters = {"GeneratedO_Intro01",}, }, -- Pre-Spawned Enemies
                     { LegalEncounters = { "SurvivalO", }, }, -- First Encounter
                 },
                 GameStateRequirements =
@@ -1538,7 +1523,7 @@ modutil.mod.Path.Wrap("StartRoom", function(base, currentRun, currentRoom)
                 NoReward = false,
                 MultipleEncountersData =
                 {
-                    { LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+                    { LegalEncounters = {"GeneratedO_Intro01",}, }, -- Pre-Spawned Enemies
                     { LegalEncounters = { "SurvivalO", }, }, -- First Encounter
                 },
                 GameStateRequirements =
@@ -1557,7 +1542,7 @@ modutil.mod.Path.Wrap("StartRoom", function(base, currentRun, currentRoom)
                 NoReward = false,
                 MultipleEncountersData =
                 {
-                    { LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+                    { LegalEncounters = {"GeneratedO_Intro01",}, }, -- Pre-Spawned Enemies
                     { LegalEncounters = { "SurvivalO", }, }, -- First Encounter
                 },
                 GameStateRequirements =
@@ -1576,7 +1561,7 @@ modutil.mod.Path.Wrap("StartRoom", function(base, currentRun, currentRoom)
                 NoReward = false,
                 MultipleEncountersData =
                 {
-                    { LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+                    { LegalEncounters = {"GeneratedO_Intro01",}, }, -- Pre-Spawned Enemies
                     { LegalEncounters = { "SurvivalO", }, }, -- First Encounter
                 },
                 GameStateRequirements =

@@ -50,7 +50,7 @@ local function on_reload()
 	-- what to do when we are ready, but also again on every reload.
 	-- only do things that are safe to run over and over.
 	if config.enabled == false then return end
-
+	import "imgui.lua"
 	import 'reload.lua'
 end
 
