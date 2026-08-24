@@ -31,6 +31,7 @@ While the mod has been tested decently well it is recommended to backup your sav
 
 - Destroying Ephyra SoulPylon removes the Survival UI
 - Olympus and rifts of Thessaly have a short encounter before the survival
+- Config changes apply only game restart
 
 ## Issues
 
