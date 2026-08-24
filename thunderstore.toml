@@ -5,8 +5,8 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "JarlUlsfark"
 name = "Horde_Mode"
-versionNumber = "0.0.1"
-description = "Adds A Horde Mode to Dream Dives. (Rift of Thessaly not implemented, prefer to avoid)"
+versionNumber = "1.0.0"
+description = "Adds A Horde Mode to Dream Dives. Survive the endless Horde until time runs out."
 websiteUrl = "https://github.com/Tal-lev/Horde_Mode"
 containsNsfwContent = false
 
