@@ -87,7 +87,7 @@ OverwriteTableKeys(EncounterData, {
 
     SurvivalP =
 	{
-		InheritFrom = { "SurvivalHorde", "GeneratedQ" },
+		InheritFrom = { "SurvivalHorde", "GeneratedP" },
 		EnemySet = EnemySets.BiomeP,
 	},
 
