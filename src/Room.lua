@@ -553,7 +553,11 @@ OverwriteTableKeys(RoomData, {
         LegalEncounters = { "SurvivalO", }, 
         CanSpawnDreamReward = true, 
         NoReward = false,
-        MultipleEncountersData = {}, 
+        MultipleEncountersData =
+        {
+			{ LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+			{ LegalEncounters = { "SurvivalO", }, }, -- First Encounter
+		},
         GameStateRequirements =
         {
             {
@@ -567,8 +571,12 @@ OverwriteTableKeys(RoomData, {
         InheritFrom = {"O_Combat05"},
         LegalEncounters = { "SurvivalO", }, 
         CanSpawnDreamReward = true, 
-        NoReward = false, 
-        MultipleEncountersData = {},
+        NoReward = false,
+        MultipleEncountersData =
+        {
+			{ LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+			{ LegalEncounters = { "SurvivalO", }, }, -- First Encounter
+		},
         GameStateRequirements =
         {
             {
@@ -583,7 +591,11 @@ OverwriteTableKeys(RoomData, {
         LegalEncounters = { "SurvivalO", }, 
         CanSpawnDreamReward = true,  
         NoReward = false,
-        MultipleEncountersData = {},
+        MultipleEncountersData =
+        {
+			{ LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+			{ LegalEncounters = { "SurvivalO", }, }, -- First Encounter
+		},
         GameStateRequirements =
         {
             {
@@ -598,7 +610,11 @@ OverwriteTableKeys(RoomData, {
         LegalEncounters = { "SurvivalO", }, 
         CanSpawnDreamReward = true, 
         NoReward = false,
-        MultipleEncountersData = {}, 
+        MultipleEncountersData =
+        {
+			{ LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+			{ LegalEncounters = { "SurvivalO", }, }, -- First Encounter
+		},
         GameStateRequirements =
         {
             {
@@ -613,7 +629,11 @@ OverwriteTableKeys(RoomData, {
         LegalEncounters = { "SurvivalO", }, 
         CanSpawnDreamReward = true, 
         NoReward = false,
-        MultipleEncountersData = {}, 
+        MultipleEncountersData =
+        {
+			{ LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+			{ LegalEncounters = { "SurvivalO", }, }, -- First Encounter
+		},
         GameStateRequirements =
         {
             {
@@ -628,7 +648,11 @@ OverwriteTableKeys(RoomData, {
         LegalEncounters = { "SurvivalO", }, 
         CanSpawnDreamReward = true,  
         NoReward = false,
-        MultipleEncountersData = {},
+        MultipleEncountersData =
+        {
+			{ LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+			{ LegalEncounters = { "SurvivalO", }, }, -- First Encounter
+		},
         GameStateRequirements =
         {
             {
@@ -643,7 +667,11 @@ OverwriteTableKeys(RoomData, {
         LegalEncounters = { "SurvivalO", }, 
         CanSpawnDreamReward = true,  
         NoReward = false,
-        MultipleEncountersData = {},
+        MultipleEncountersData =
+        {
+			{ LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+			{ LegalEncounters = { "SurvivalO", }, }, -- First Encounter
+		},
         GameStateRequirements =
         {
             {
@@ -1482,9 +1510,142 @@ table.insert(RoomSets.Styx, "D_Survival06")
 
 
 modutil.mod.Path.Wrap("StartRoom", function(base, currentRun, currentRoom)
-	print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-    print("ObstacleData.TravelDoor01.ForceRoomName")
-    print(ObstacleData.TravelDoor01.ForceRoomName)
+    if RoomData.O_Survival02.MultipleEncountersData[2].LegalEncounters[1] ~= "SurvivalO" then
+        OverwriteTableKeys(RoomData, {
+            O_Survival02 =
+            {
+                InheritFrom = {"O_Combat02"},
+                LegalEncounters = { "SurvivalO", }, 
+                CanSpawnDreamReward = true, 
+                NoReward = false,
+                MultipleEncountersData =
+                {
+                    { LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+                    { LegalEncounters = { "SurvivalO", }, }, -- First Encounter
+                },
+                GameStateRequirements =
+                {
+                    {
+                        PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+                    },
+                },
+            },
+
+            O_Survival05 =
+            {
+                InheritFrom = {"O_Combat05"},
+                LegalEncounters = { "SurvivalO", }, 
+                CanSpawnDreamReward = true, 
+                NoReward = false,
+                MultipleEncountersData =
+                {
+                    { LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+                    { LegalEncounters = { "SurvivalO", }, }, -- First Encounter
+                },
+                GameStateRequirements =
+                {
+                    {
+                        PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+                    },
+                },
+            },
+
+            O_Survival06 =
+            {
+                InheritFrom = {"O_Combat06"},
+                LegalEncounters = { "SurvivalO", }, 
+                CanSpawnDreamReward = true,  
+                NoReward = false,
+                MultipleEncountersData =
+                {
+                    { LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+                    { LegalEncounters = { "SurvivalO", }, }, -- First Encounter
+                },
+                GameStateRequirements =
+                {
+                    {
+                        PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+                    },
+                },
+            },
+
+            O_Survival08 =
+            {
+                InheritFrom = {"O_Combat08"},
+                LegalEncounters = { "SurvivalO", }, 
+                CanSpawnDreamReward = true, 
+                NoReward = false,
+                MultipleEncountersData =
+                {
+                    { LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+                    { LegalEncounters = { "SurvivalO", }, }, -- First Encounter
+                },
+                GameStateRequirements =
+                {
+                    {
+                        PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+                    },
+                },
+            },
+
+            O_Survival09 =
+            {
+                InheritFrom = {"O_Combat09"},
+                LegalEncounters = { "SurvivalO", }, 
+                CanSpawnDreamReward = true, 
+                NoReward = false,
+                MultipleEncountersData =
+                {
+                    { LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+                    { LegalEncounters = { "SurvivalO", }, }, -- First Encounter
+                },
+                GameStateRequirements =
+                {
+                    {
+                        PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+                    },
+                },
+            },
+
+            O_Survival12 =
+            {
+                InheritFrom = {"O_Combat12"},
+                LegalEncounters = { "SurvivalO", }, 
+                CanSpawnDreamReward = true,  
+                NoReward = false,
+                MultipleEncountersData =
+                {
+                    { LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+                    { LegalEncounters = { "SurvivalO", }, }, -- First Encounter
+                },
+                GameStateRequirements =
+                {
+                    {
+                        PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+                    },
+                },
+            },
+
+            O_Survival14 =
+            {
+                InheritFrom = {"O_Combat14"},
+                LegalEncounters = { "SurvivalO", }, 
+                CanSpawnDreamReward = true,  
+                NoReward = false,
+                MultipleEncountersData =
+                {
+                    { LegalEncounters = EncounterSets.OEncountersIntros }, -- Pre-Spawned Enemies
+                    { LegalEncounters = { "SurvivalO", }, }, -- First Encounter
+                },
+                GameStateRequirements =
+                {
+                    {
+                        PathTrue = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}
+                    },
+                },
+            },
+        })
+    end
     if CurrentRun['JarlUlsfark-Horde_ModeHordeMode'] then
         local Changed = 0
         if not RoomData.A_Survival02.LegalEncountersDictionary.SurvivalHordeTartarus then
