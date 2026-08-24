@@ -36,7 +36,7 @@ function DrawMenu()
     rom.ImGui.Text("    "); rom.ImGui.SameLine()
     rom.ImGui.Text("The max concurrent enemies")
     rom.ImGui.Text("    "); rom.ImGui.SameLine()
-     value, selected = rom.ImGui.SliderInt("###MaxEnemies", config.ActiveEnemyCapMax, 4, 16, '%d%')
+     value, selected = rom.ImGui.SliderInt("###MaxEnemies", config.ActiveEnemyCapMax, 4, 24, '%d%')
     if value ~= previousConfig.ActiveEnemyCapMax then
         config.ActiveEnemyCapMax = value
         previousConfig.ActiveEnemyCapMax = value
