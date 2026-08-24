@@ -2,9 +2,23 @@
 
 Adds Horde Mode into Dream Dives.
 
+## Features
+
+Survive the endless Hordes.
+How much can you slay until time runs out?
+
+## Activation
+
 Requires BossRush and Horde Mode config to be active in order to work.
 
-Zagreus Journey Horde mode not yet implemented and may cause errors
+Ensure Boss rush is ticked on and mark Horde Mode as "Yes" 
+Dream Dives will now lead to Horde mode. 
+To return to regular Boss Rush changed the Horde Mode activation to "No".
+To revert back to regular Dream Dives untick Boss Rush
+
+<div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+  <img src="https://media.githubusercontent.com/media/Tal-lev/Horde_Mode/refs/heads/main/images/imgui.png" alt="PonyDressList" width="70%">
+</div>
 
 ## Install
 
@@ -14,11 +28,9 @@ While the mod has been tested decently well it is recommended to backup your sav
 
 ## Known Issues
 
-- Avoid Rifts of Thessaly!! Horde mode not implemented there!
-  - It will have a normal encounter that repeats, 1 per biome until the run ends. 
 - Destroying Ephyra SoulPylon removes the Survival UI
 - Mourning Fields takes 2 regions
-- Olympus has a short encounter before the survival
+- Olympus and rifts of Thessaly has a short encounter before the survival
 
 ## Issues
 
