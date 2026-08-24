@@ -31,7 +31,8 @@ While the mod has been tested decently well it is recommended to backup your sav
 
 - Destroying Ephyra SoulPylon removes the Survival UI
 - Mourning Fields takes 2 regions
-- Olympus and rifts of Thessaly has a short encounter before the survival
+- Winning doesn't show victory screen and counts as a loss in the record keeper
+- Olympus and rifts of Thessaly have a short encounter before the survival
 
 ## Issues
 
