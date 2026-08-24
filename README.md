@@ -5,6 +5,7 @@ Adds Horde Mode into Dream Dives.
 ## Features
 
 Survive the endless Hordes.
+
 How much can you slay until time runs out?
 
 ## Activation
