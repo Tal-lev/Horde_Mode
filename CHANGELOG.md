@@ -7,9 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Fix: Mourning fields shop leads to survival room instead of into room
+- Fix: Mourning fields shop leads to survival room instead of into room (thanks to @zerp on discord)
 - Fix: Victory screen appears when winning the run
-- Fix: Heracles encounters will no longer appear instead of survival 
+- Fix: Heracles encounters will no longer appear instead of survival
 
 ## [1.0.0] - 2026-08-24
 
