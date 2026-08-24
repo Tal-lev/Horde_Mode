@@ -201,9 +201,10 @@ OverwriteTableKeys(RoomData, {
     H_Survival01 =
     {
         InheritFrom = {"H_MiniBoss01"},
-        LegalEncounters = { "SurvivalH", }, 
+        LegalEncounters = { "SurvivalH", },
         CanSpawnDreamReward = true,
-        EntranceDirection = "LeftRight",
+        ForceAtBiomeDepthMin = "nil",
+        ForceAtBiomeDepthMax = "nil",
         GameStateRequirements =
         {
             {
@@ -215,9 +216,10 @@ OverwriteTableKeys(RoomData, {
     H_Survival02 =
     {
         InheritFrom = {"H_MiniBoss02"},
-        LegalEncounters = { "SurvivalH", }, 
-        CanSpawnDreamReward = true, 
-        EntranceDirection = "LeftRight",
+        LegalEncounters = { "SurvivalH", },
+        CanSpawnDreamReward = true,
+        ForceAtBiomeDepthMin = "nil",
+        ForceAtBiomeDepthMax = "nil",
         GameStateRequirements =
         {
             {
@@ -1315,66 +1317,6 @@ table.insert(RoomData.G_Boss02.GameStateRequirements, {PathFalse = {"CurrentRun"
 table.insert(RoomData.H_Boss01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
 table.insert(RoomData.H_Boss02.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
 
-if not RoomData.H_Combat01.GameStateRequirements then
-    RoomData.H_Combat01.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat01.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-if not RoomData.H_Combat02.GameStateRequirements then
-    RoomData.H_Combat02.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat02.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-if not RoomData.H_Combat03.GameStateRequirements then
-    RoomData.H_Combat03.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat03.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-if not RoomData.H_Combat04.GameStateRequirements then
-    RoomData.H_Combat04.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat04.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-if not RoomData.H_Combat05.GameStateRequirements then
-    RoomData.H_Combat05.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat05.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-if not RoomData.H_Combat06.GameStateRequirements then
-    RoomData.H_Combat06.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat06.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-if not RoomData.H_Combat07.GameStateRequirements then
-    RoomData.H_Combat07.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat07.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-if not RoomData.H_Combat08.GameStateRequirements then
-    RoomData.H_Combat08.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat08.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-if not RoomData.H_Combat09.GameStateRequirements then
-    RoomData.H_Combat09.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat09.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-if not RoomData.H_Combat10.GameStateRequirements then
-    RoomData.H_Combat10.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat10.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-if not RoomData.H_Combat11.GameStateRequirements then
-    RoomData.H_Combat11.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat11.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-if not RoomData.H_Combat12.GameStateRequirements then
-    RoomData.H_Combat12.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat12.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-if not RoomData.H_Combat13.GameStateRequirements then
-    RoomData.H_Combat13.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat13.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-if not RoomData.H_Combat14.GameStateRequirements then
-    RoomData.H_Combat14.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat14.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
-if not RoomData.H_Combat15.GameStateRequirements then
-    RoomData.H_Combat15.GameStateRequirements = {}
-end
-table.insert(RoomData.H_Combat15.GameStateRequirements, {PathFalse = {"CurrentRun" , _PLUGIN.guid .. "HordeMode"}})
 if not RoomData.H_MiniBoss01.GameStateRequirements then
     RoomData.H_MiniBoss01.GameStateRequirements = {}
 end
