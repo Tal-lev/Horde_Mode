@@ -4,6 +4,7 @@ OverwriteTableKeys(EncounterData, {
     SurvivalHorde =
 	{
 		InheritFrom = { "BaseSurvival", },
+		IsSurvivalEncounter = true,
 		RequiredMinBiomeDepth = 6,
 		--up from 6
 		ActiveEnemyCapBase = config.ActiveEnemyCapMax,

@@ -20,6 +20,14 @@ modutil.mod.Path.Wrap("StartNewRun", function (base, ...)
     return currentRun
 end)
 
+modutil.mod.Path.Wrap("EndEncounterEffects", function (base, currentRun, currentRoom, currentEncounter)
+    base(currentRun, currentRoom, currentEncounter)
+    if currentRun[_PLUGIN.guid .. "HordeMode"] == true then
+        if CurrentRun.IsDreamRun and CurrentRun.EnteredBiomes >= GameData.FullRunBiomeCount and currentEncounter.IsSurvivalEncounter then
+		    OpenRunClearScreen()
+	    end
+    end 
+end)
 
 modutil.once_loaded.game(function()
     SetupRunData()
