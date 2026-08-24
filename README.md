@@ -18,7 +18,7 @@ To return to regular Boss Rush changed the Horde Mode activation to "No".
 To revert back to regular Dream Dives untick Boss Rush
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-  <img src="https://media.githubusercontent.com/media/Tal-lev/Horde_Mode/refs/heads/main/images/imgui.png" alt="PonyDressList" width="70%">
+  <img src="https://media.githubusercontent.com/media/Tal-lev/Horde_Mode/refs/heads/main/images/imgui.png" alt="PonyDressList" width="40%">
 </div>
 
 ## Install
